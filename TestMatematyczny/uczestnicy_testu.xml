@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.6.6
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Czas generowania: 12 Maj 2018, 18:31
+- Wersja serwera: 10.1.29-MariaDB-6
+- Wersja PHP: 7.1.17
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="eska5" collation="latin1_general_ci" charset="latin1">
+            <pma:table name="uczestnicy_testu">
+                CREATE TABLE `uczestnicy_testu` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `imie` varchar(20) COLLATE latin1_general_ci NOT NULL,
+                  `nazwisko` varchar(20) COLLATE latin1_general_ci NOT NULL,
+                  `login` varchar(20) COLLATE latin1_general_ci NOT NULL,
+                  `haslo` varchar(20) COLLATE latin1_general_ci NOT NULL,
+                  `ilosc_punktow` int(1) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Baza danych: 'eska5'
+    -->
+    <database name="eska5">
+        <!-- Tabela uczestnicy_testu -->
+        <table name="uczestnicy_testu">
+            <column name="id">9</column>
+            <column name="imie">jan</column>
+            <column name="nazwisko">korek</column>
+            <column name="login">1234</column>
+            <column name="haslo">jan</column>
+            <column name="ilosc_punktow">3</column>
+        </table>
+        <table name="uczestnicy_testu">
+            <column name="id">8</column>
+            <column name="imie">Jakub</column>
+            <column name="nazwisko">Sachajko</column>
+            <column name="login">eska5a</column>
+            <column name="haslo">12345</column>
+            <column name="ilosc_punktow">5</column>
+        </table>
+        <table name="uczestnicy_testu">
+            <column name="id">11</column>
+            <column name="imie">ja</column>
+            <column name="nazwisko">mam</column>
+            <column name="login">kota</column>
+            <column name="haslo">pies123</column>
+            <column name="ilosc_punktow">-1</column>
+        </table>
+        <table name="uczestnicy_testu">
+            <column name="id">13</column>
+            <column name="imie">Jan</column>
+            <column name="nazwisko">Kowaliski</column>
+            <column name="login">kowal</column>
+            <column name="haslo">kowal2</column>
+            <column name="ilosc_punktow">1</column>
+        </table>
+    </database>
+</pma_xml_export>

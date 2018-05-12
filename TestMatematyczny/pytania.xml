@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.6.6
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Czas generowania: 12 Maj 2018, 18:31
+- Wersja serwera: 10.1.29-MariaDB-6
+- Wersja PHP: 7.1.17
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="eska5" collation="latin1_general_ci" charset="latin1">
+            <pma:table name="pytania">
+                CREATE TABLE `pytania` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `pytanie` text COLLATE latin1_general_ci NOT NULL,
+                  `odp1` varchar(255) COLLATE latin1_general_ci NOT NULL,
+                  `odp2` varchar(255) COLLATE latin1_general_ci NOT NULL,
+                  `odp3` varchar(255) COLLATE latin1_general_ci NOT NULL,
+                  `popodp` varchar(255) COLLATE latin1_general_ci NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Baza danych: 'eska5'
+    -->
+    <database name="eska5">
+        <!-- Tabela pytania -->
+        <table name="pytania">
+            <column name="id">1</column>
+            <column name="pytanie">$\sqrt[5]{59049}$</column>
+            <column name="odp1">9</column>
+            <column name="odp2">11</column>
+            <column name="odp3">13</column>
+            <column name="popodp">9</column>
+        </table>
+        <table name="pytania">
+            <column name="id">2</column>
+            <column name="pytanie">kolejny wyraz ciagu geometrycznego $1,2,4,8$ to :</column>
+            <column name="odp1">12</column>
+            <column name="odp2">14</column>
+            <column name="odp3">16</column>
+            <column name="popodp">16</column>
+        </table>
+        <table name="pytania">
+            <column name="id">3</column>
+            <column name="pytanie">$2+2*2=x$ Ile wynosi $x$</column>
+            <column name="odp1">6</column>
+            <column name="odp2">8</column>
+            <column name="odp3">10</column>
+            <column name="popodp">6</column>
+        </table>
+        <table name="pytania">
+            <column name="id">4</column>
+            <column name="pytanie">$x^{2}+4x+4=0$ Podaj miejsce zerowe funkcji</column>
+            <column name="odp1">2</column>
+            <column name="odp2">-2</column>
+            <column name="odp3">3</column>
+            <column name="popodp">-2</column>
+        </table>
+        <table name="pytania">
+            <column name="id">5</column>
+            <column name="pytanie">ile wynosi $2^{10}$</column>
+            <column name="odp1">1012</column>
+            <column name="odp2">1024</column>
+            <column name="odp3">512</column>
+            <column name="popodp">1024</column>
+        </table>
+    </database>
+</pma_xml_export>
